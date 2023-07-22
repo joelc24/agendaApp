@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ title }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body">
+	<form [formGroup]="contactoForm">
+		<div class="form-floating mb-2">
+			<input type="text" class="form-control" id="floatingInput" formControlName="nombre">
+			<label for="floatingInput">Nombre</label>
+		</div>
+		<div class="form-floating mb-2">
+			<input type="number" class="form-control" id="floatingInput" formControlName="numero">
+			<label for="floatingInput">Numero</label>
+		</div>
+	</form>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-success" [disabled]="contactoForm.invalid">Guardar</button>
+    <button type="button" class="btn btn-outline-danger" (click)="delete()">Eliminar</button>
+</div>
+
+

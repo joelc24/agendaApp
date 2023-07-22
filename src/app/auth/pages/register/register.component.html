@@ -1,0 +1,33 @@
+<div class="d-flex flex-row-reverse align-items-center justify-content-center vh-100 bg-body-secondary">
+    <div class="w-auto">
+        <img src="assets/imgs/connecting.svg" alt="diary">
+    </div>
+    <div class="m-auto form-signin w-25 bg-white p-4 rounded-3">
+
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Bienvenido</h1>
+
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="John Doe">
+                <label for="floatingInput">Nombre</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Recordarme
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
+            <p class="mt-5 mb-3 text-muted">Ya tienes una cuenta?</p>
+            <a routerLink="/auth/register" class="link-primary">Iniciar Session</a>
+        </form>
+    </div>
+</div>

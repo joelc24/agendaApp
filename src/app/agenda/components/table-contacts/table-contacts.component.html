@@ -1,0 +1,28 @@
+<button class="btn btn-lg btn-outline-primary bi bi-person-fill-add" (click)="open()"></button>
+<hr>
+<table class="table table-striped mt-4">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Numero</th>
+			<th scope="col">Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let contacto of contactos; index as i">
+			<th scope="row">{{ i + 1 }}</th>
+			<td>
+				{{ contacto.nombre }}
+			</td>
+			<td>
+				{{ contacto.numero }}
+			</td>
+			<td>
+				<button class="btn btn-warning" (click)="openEdit(contacto)">
+					<i class='bi bi-pencil-fill'></i>
+				</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
